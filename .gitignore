@@ -1,3 +1,6 @@
 .env
 .envrc
 .venv
+.jupyter_config
+
+.ipynb_checkpoints
