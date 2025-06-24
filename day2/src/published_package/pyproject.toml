@@ -1,0 +1,13 @@
+[project]
+name = "stringcase-utils"
+version = "0.1.0"
+description = "A simple string case conversion utility"
+authors = [{ name="Your Name", email="your@email.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
