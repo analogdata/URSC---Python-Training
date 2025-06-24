@@ -1,6 +1,11 @@
+# System files
+.DS_Store
+
 .env
 .envrc
 .venv
 .jupyter_config
 
 .ipynb_checkpoints
+
+downloaded_packages

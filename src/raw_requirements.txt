@@ -1,0 +1,17 @@
+fastapi
+flask
+matplotlib
+numpy
+pandas
+openpyxl
+pymodbus
+pyserial
+pyusb
+pyvisa
+requests
+scipy
+twine
+uvicorn
+xlsxwriter
+streamlit
+pyzmq
