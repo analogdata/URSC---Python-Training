@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+stringcase_utils/__init__.py
+stringcase_utils/converters.py
+stringcase_utils.egg-info/PKG-INFO
+stringcase_utils.egg-info/SOURCES.txt
+stringcase_utils.egg-info/dependency_links.txt
+stringcase_utils.egg-info/top_level.txt
+tests/test_converters.py

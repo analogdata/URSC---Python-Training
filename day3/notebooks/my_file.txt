@@ -1,0 +1,2 @@
+Python is fun!
+This is written using 'with' block.

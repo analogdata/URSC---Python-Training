@@ -1,0 +1,2 @@
+Hello from pathlib!
+Second line of data.

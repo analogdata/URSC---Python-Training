@@ -1,0 +1,24 @@
+{
+    "device_name": "TelemetryUnit_01",
+    "version": "1.2.0",
+    "sensors": [
+        {
+            "id": "TS_A",
+            "type": "temperature",
+            "unit": "Celsius",
+            "threshold": 30.0
+        },
+        {
+            "id": "PS_B",
+            "type": "pressure",
+            "unit": "kPa",
+            "threshold": 110.0
+        }
+    ],
+    "network_settings": {
+        "ip_address": "192.168.1.10",
+        "port": 8080,
+        "protocol": "TCP"
+    },
+    "logging_enabled": true
+}

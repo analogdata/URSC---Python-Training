@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: stringcase-utils
+Version: 0.1.0
+Summary: A simple string case conversion utility
+Author-email: Your Name <your@email.com>
+License-Expression: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# stringcase-utils
+
+A simple Python package to convert strings between snake_case and camelCase.
