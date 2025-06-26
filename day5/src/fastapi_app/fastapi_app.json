@@ -1,0 +1,112 @@
+{
+  "info": {
+    "name": "FastAPI Sensor API",
+    "_postman_id": "d63d5aa5-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "description": "Postman collection for FastAPI-based sensor data endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Root - Welcome Message",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": [""]
+        }
+      }
+    },
+    {
+      "name": "System Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/status",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["status"]
+        }
+      }
+    },
+    {
+      "name": "Sensor Info by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/sensor/TEMP_001",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["sensor", "TEMP_001"]
+        }
+      }
+    },
+    {
+      "name": "Sensor Info (Not Found)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/sensor/UNKNOWN_ID",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["sensor", "UNKNOWN_ID"]
+        }
+      }
+    },
+    {
+      "name": "Create New Sensor Reading (Full)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sensor_id\": \"TEMP_001\",\n  \"temperature\": 28.5,\n  \"pressure\": 101.3\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/new_sensor_reading/",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["new_sensor_reading", ""]
+        }
+      }
+    },
+    {
+      "name": "Create New Sensor Reading (Without Pressure)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sensor_id\": \"TEMP_002\",\n  \"temperature\": 30.1\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/new_sensor_reading/",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["new_sensor_reading", ""]
+        }
+      }
+    }
+  ]
+}

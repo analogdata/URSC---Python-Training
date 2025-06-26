@@ -1,0 +1,81 @@
+{
+    "info": {
+      "name": "Flask API Demo",
+      "_postman_id": "f1234567-89ab-4cde-b123-4567890abcde",
+      "description": "Test Flask API locally on http://127.0.0.1:5000/",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "GET /",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://127.0.0.1:5000/",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "5000",
+            "path": [""]
+          }
+        }
+      },
+      {
+        "name": "GET /hello",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://127.0.0.1:5000/hello",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "5000",
+            "path": ["hello"]
+          }
+        }
+      },
+      {
+        "name": "GET /echo_name?name=Rajath",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://127.0.0.1:5000/echo_name?name=Rajath",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "5000",
+            "path": ["echo_name"],
+            "query": [
+              {
+                "key": "name",
+                "value": "Rajath"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "POST /sensor_data",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"id\": \"TEMP_001\",\n  \"value\": 28.7\n}"
+          },
+          "url": {
+            "raw": "http://127.0.0.1:5000/sensor_data",
+            "protocol": "http",
+            "host": ["127.0.0.1"],
+            "port": "5000",
+            "path": ["sensor_data"]
+          }
+        }
+      }
+    ]
+  }
